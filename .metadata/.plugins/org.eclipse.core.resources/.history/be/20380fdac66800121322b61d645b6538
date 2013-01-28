@@ -1,0 +1,15 @@
+<?php
+$imagepath = $_GET['pic'];
+$image=imagecreatefromjpeg($imagepath);
+header('Content-type: image/jpeg');
+?>
+
+<html>
+<head>
+</head>
+<body>
+<div class=pictureBase >
+	<img src=<?php $image ?> />
+</div>
+</body>
+</html>

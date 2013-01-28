@@ -1,0 +1,25 @@
+<?php
+$imagepath = $_GET['pic'];
+$image=imagecreatefromjpeg($imagepath);
+
+imagejpeg($image);
+?>
+
+<html>
+<head>
+</head>
+<body>
+<div class=pictureBase >
+	<table>
+		<tr>
+			<td><img src=<?php $image ?> /></td>
+			<td><img src=<?php $image ?> /></td>
+		</tr>
+		<tr>
+			<td><img src=<?php $image ?> /></td>
+			<td><img src=<?php $image ?> /></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

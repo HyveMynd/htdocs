@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="MemoryStyle.css" type="text/css" /> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="memory.js" type="text/javascript" ></script>
+<title>Number Memory</title>
+</head>
+<body>
+<h1>Memory!</h1>
+<div class=gameboard ></div>
+<div class=select>
+	<INPUT type="button" value="Change to Yellow!" name="button3" onClick="document.bgColor='yellow'"> 
+	<button id=nine type=button onclick="displayBoard(3)">9 Numbers</button>
+	<button id=twentyfive type=button onclick="displayBoard(3)">25 Numbers</button>
+	<button id=onehundred type=button onclick="displayBoard(3)">100 Numbers</button>
+</div>
+<p>Complete!</p>
+</body>
+</html>

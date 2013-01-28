@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+body { background-color:#f9dfcb; }
+h1 { text-align:center; color:black }
+table { 
+	text-align:center; 
+	color:black; 
+	border: 5px solid black; 
+	border-collapse:collapse;
+	margin:auto;
+	font-size:50px;
+}
+tr { border: 5px solid black; height: 150px; width: 150px; }
+td { border: 5px solid black; height: 150px; width: 150px; }

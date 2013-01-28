@@ -1,0 +1,10 @@
+<?php
+function (){
+	if (strlen($_GET['caption']) >= 20 || $_GET['caption'] == ""){
+		//repost
+	}
+	if($_GET['pic'] == null){
+		echo "WRONG";
+	}
+}
+?>

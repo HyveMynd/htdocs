@@ -1,0 +1,57 @@
+var rows;
+var columns;
+var numbers = new Array();
+
+function displayNumber(button){
+	$(button).hide();
+	window.setTimeout(function () {showbutton(button);}, 500);
+}
+
+function showbutton(button){
+	//$(button).show();
+}
+
+function mouseDown(e){
+	displayNumber();
+}
+
+function displayBoard(num){
+	for (var i = 0; i < 25; i++){
+		numbers[i] = i+1;
+	}
+
+	//add the buttons to the gameboard
+	var board = "<table>";
+	for (var r = 0; r < num; r++){
+		var row = "<tr>";
+		for (var c = 0; c < num; c++){
+			var key = Math.floor(Math.random() * numbers.length-1);
+			var number = numbers.splice(key, 1);
+			//randomly select array numbers
+			row += "<td><input type=button value="+number+" /></td>";
+		}
+		row += "</tr>";
+		board += row;
+	}
+	board += "</table>";
+	$(".gameboard").append(board);
+	$("#twentyfive").hide();
+	
+	//tie gameboard buttons
+	$(".gameboard input").click(function () { play(this); });
+}
+
+function play(button){
+	//get the row and column of the button
+	var td = $(button).parent();
+	var col = td.parent().children().index(td);
+	var row = td.parent().parent().children().index(td.parent()); 
+	
+	//toggle the number to display
+	toggle(row, col);
+}
+
+function toggle (r,c){
+	var button = $(".gameboard input").get(r*5+c);
+	displayNumber(button);
+}
