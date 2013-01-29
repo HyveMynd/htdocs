@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+body {
+	background-color:#99CCFF;
+	text-align:center;
+	margin:auto;	
+}
+
+table{
+	margin-left:25%;
+	margin-right:auto;
+}
+
+#submit {
+	margin-left:25%;
+	margin-right:25%;
+	
+	height:100px;
+	width:200px;
+}
+
+.memePics {
+	width:1000px; 
+	height:1000px;
+	font-size:35px;
+	table-layout:fixed;
+}

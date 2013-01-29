@@ -1,0 +1,29 @@
+<?php
+$img1 = $_GET['pic1'];
+$img2 = $_GET['pic2'];
+$img3 = $_GET['pic3'];
+$img4 = $_GET['pic4'];
+$images = array(
+		raptor=> 'raptor.jpg',
+		kid => 'kid.jpg',
+		future => 'future.jpg',
+		dosxx => 'dosxx.jpg');
+?>
+
+<html>
+<head>	
+<link rel="stylesheet" href="MemeStyle.css" type="text/css" />
+</head>
+<body>
+<table class=memePics>
+	<tr>
+		<td background=<?php echo $_GET['pic1']?> style=color:<?php echo $_GET['textColor1']?>><?php echo $_GET['caption1']?></td>
+		<td background=<?php echo $_GET['pic2']?> ><?php echo $_GET['caption2']?></td>
+	</tr>
+	<tr>
+		<td background=<?php echo $_GET['pic3']?> ><?php echo $_GET['caption3']?></td>
+		<td background=<?php echo $_GET['pic4']?> ><?php echo $_GET['caption4']?></td>
+	</tr>
+</table>
+</body>
+</html>

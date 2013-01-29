@@ -1,0 +1,16 @@
+function validate(){
+	//ensure the form is correct before submitting
+	var invalid = false;
+	//check captions
+	$('input[name^="caption"]').each(function (){
+		if($.trim($(this).val()) == ''){
+			$(this).css('border', '3px #FF0000 solid');
+			invalid = true;
+		}
+	});
+	if(invalid)
+		return false;
+	
+	//check radio group
+	
+}

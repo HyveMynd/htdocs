@@ -1,0 +1,3 @@
+function validate(){
+	//ensure the form is correct before submitting
+}

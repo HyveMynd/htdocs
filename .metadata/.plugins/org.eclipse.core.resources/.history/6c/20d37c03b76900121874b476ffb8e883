@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+body {
+	background-color:#FFFFCC;
+	text-align:center;
+	
+}
+
+.memePics {
+	width:1000px; 
+	height:1000px;
+	font-size:35px;
+	table-layout:fixed;
+}

@@ -1,0 +1,24 @@
+<?php
+$images = array(
+		raptor=> 'raptor.jpeg',
+		kid => 'kid.jpg',
+		future => 'future.jpg',
+		dosxx => 'dosxx.jpg');
+?>
+
+<html>
+<head>
+</head>
+<body>
+<table class=memePics>
+	<tr>
+		<td><img src=<?php echo $images[$_GET['pic1']]  ?> />src=<?php echo "$images[$_GET['pic1']]"  ?></td>
+		<td><img src=<?php echo $image ?> /></td>
+	</tr>
+	<tr>
+		<td><img src=<?php echo $image ?> /></td>
+		<td><img src=<?php echo $image ?> /></td>
+	</tr>
+</table>
+</body>
+</html>

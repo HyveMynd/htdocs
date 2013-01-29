@@ -1,9 +1,0 @@
-<?php
-function (){
-	if (strlen($_GET['caption']) >= 20 || $_GET['caption'] == ""){
-	}
-	if($_GET['pic'] == null){
-		echo wrong;
-	}
-}
-?>

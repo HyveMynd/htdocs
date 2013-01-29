@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+body {
+	background-color:#99CCFF;
+	text-align:center;
+	margin:auto;	
+}
+
+table{
+	margin-left:25%;
+	margin-right:auto;
+}
+
+input button{
+	height:100px;
+	width:100px;
+}
+
+.memePics {
+	width:1000px; 
+	height:1000px;
+	font-size:35px;
+	table-layout:fixed;
+}

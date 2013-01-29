@@ -1,0 +1,10 @@
+function validate(){
+	//ensure the form is correct before submitting
+	
+	//check captions
+	$('input[name^="caption"]').each(function (){
+		if(trim(this.val()) == ''){
+			
+		}
+	});
+}

@@ -1,0 +1,34 @@
+function validate(){
+	//ensure the form is correct before submitting
+	var errMsg = "";
+	
+	var invalidText = false;
+	//check captions
+	$('input[name^="caption"]').each(function (){
+		if($.trim($(this).val()) == ''){
+			$(this).css('border', '3px #FF0000 solid');
+			invalidText = true;
+		}
+	});
+	if (invalidText)
+		errMsg += "*\tA textbox is either empty, or contains too many characters.\n\t";
+	
+	//check radio group
+	var invalidRadio = false;
+	$("input:radio").each(function(){
+		var name = $(this).attr("name");
+		if($("input:radio[name="+name+"]:checked").length == 0){
+			$(this).parent().css('border', '3px #FF0000 solid');
+			invalidRadio = true;
+		}
+	});
+	if(invalidRadio)
+		errMsg += "*A radio is empty.\n\t";			
+
+	if(errMsg == 0){
+		$("form").submit();
+	}
+	else{
+		alert("There is an error in the form:\n"+errMsg);
+	}
+}

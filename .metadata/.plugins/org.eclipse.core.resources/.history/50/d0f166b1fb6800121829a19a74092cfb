@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+.memepics {
+	width:1000px; 
+	height:1000px;
+	font-size:50px;
+}

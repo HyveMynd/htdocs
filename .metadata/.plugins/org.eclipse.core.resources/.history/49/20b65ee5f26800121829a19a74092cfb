@@ -1,0 +1,134 @@
+<?php 
+$options =	"<option value='black' selected=selected >Black</option>
+				<option value='red'>Red</option>
+				<option value='white'>White</option>
+				<option value='whiteBlack'>White w/Black Border</option>";
+
+$images = "<td><img src='raptor.jpg' /></td>
+				<td><img src='kid.jpg' /></td>
+				<td><img src='future.jpg' /></td>
+				<td><img src='dosxx.jpg' /></td>";
+
+$names[1] = "name=pic1";
+$names[2] = "name=pic2";
+$names[3] = "name=pic3";
+$names[4] = "name=pic4";
+
+
+
+function AddRadioGroup ($num){
+	return '<td><input type=radio name=.$num. value=raptor />Philosoraptor</td>
+				<td><input type=radio name='.$num.' value=kid />Success Kid</td>
+				<td><input type=radio name=".$num." value=future />Futurerama</td>
+				<td><input type=radio name=".$num." value=dosxx />Most Interesting Man</td>';
+}
+
+
+
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src=MemeControl.js></script>
+<!--<link rel="stylesheet" href="MemoryStyle.css" type="text/css" /> -->
+<title>Meme Generator</title>
+</head>
+<body>
+	<form method=get action=YourMeme.php>
+	<h1>Create your very own Meme!</h1>
+	<h2>Meme 1</h2>
+		<table>
+			<tr>
+				<td>Enter Top Caption</td>
+				<td>Select Text Color</td>
+			</tr>
+			<tr>
+				<td><input type="text" name=caption1 value="" onchange= /></td>
+				<td>
+					<select name=textColor1>
+						<?php echo $options?>
+					</select>
+				</td>
+			</tr>
+			<tr><td>Select Picture</td></tr>
+			<tr>
+				<?php echo $images ?>
+			</tr>
+			<tr>
+				<?php AddRadioGroup(1)?>
+			</tr>
+		</table>
+		<h2>Meme 2</h2>
+		<table>
+			<tr>
+				<td>Enter Top Caption</td>
+				<td>Select Text Color</td>
+			</tr>
+			<tr>
+				<td><input type="text" name=caption2 value="" onchange= /></td>
+				<td>
+					<select name=textColor2>
+						<?php echo $options?>
+					</select>
+				</td>
+			</tr>
+			<tr><td>Select Picture</td></tr>
+			<tr>
+				<?php echo $images ?>
+			</tr>
+			<tr>
+				<?php AddRadioGroup(2)?>
+			</tr>
+		</table>
+		<h2>Meme 3</h2>
+		<table>
+			<tr>
+				<td>Enter Top Caption</td>
+				<td>Select Text Color</td>
+			</tr>
+			<tr>
+				<td><input type="text" name=caption3 value="" onchange= /></td>
+				<td>
+					<select name=textColor3>
+						<?php echo $options?>
+					</select>
+				</td>
+			</tr>
+			<tr><td>Select Picture</td></tr>
+			<tr>
+				<?php echo $images ?>
+			</tr>
+			<tr>
+				<?php AddRadioGroup(3)?>
+			</tr>
+		</table>
+		<h2>Meme 4</h2>
+		<table>
+			<tr>
+				<td>Enter Top Caption</td>
+				<td>Select Text Color</td>
+			</tr>
+			<tr>
+				<td><input type="text" name=caption4 value="" onchange= /></td>
+				<td>
+					<select name=textColor4>
+						<?php echo $options?>
+					</select>
+				</td>
+			</tr>
+			<tr><td>Select Picture</td></tr>
+			<tr>
+				<?php echo $images ?>
+			</tr>
+			<tr>
+				<?php AddRadioGroup(4)?>
+			</tr>
+			<tr>
+				<td><input type="submit" value=Submit /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

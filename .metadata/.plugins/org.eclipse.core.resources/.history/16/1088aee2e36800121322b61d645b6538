@@ -1,0 +1,25 @@
+<?php
+// $image_markup = "<img src=$imagepath />";
+// $imagepath = $_GET['pic'];
+// $image=imagecreatefromjpeg($imagepath);
+// header('Content-type: image/jpeg');
+
+// imagejpeg($image);
+?>
+
+<html>
+<head>
+</head>
+<body>
+<table class=memePics>
+	<tr>
+		<td><?php echo $image  ?></td>
+		<td><img src=<?php echo $image ?> /></td>
+	</tr>
+	<tr>
+		<td><img src=<?php echo $image ?> /></td>
+		<td><img src=<?php echo $image ?> /></td>
+	</tr>
+</table>
+</body>
+</html>

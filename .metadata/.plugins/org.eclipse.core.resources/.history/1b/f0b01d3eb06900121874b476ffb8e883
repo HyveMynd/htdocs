@@ -1,0 +1,33 @@
+function validate(){
+	//ensure the form is correct before submitting
+	var valid;
+	//check captions
+	valid = checkInputGroup("caption");
+	
+	//check radio groups
+	valid = checkInputGroup("radio");
+}
+
+function checkInputGroup(group){
+	switch (group){
+	case "caption":
+		for (var i = 1; i <=4; i++){
+			var ele = "name=caption"+1;
+			var val = $('input['+ele+']').val();
+			if(val == "" || val.length > 20){
+				return false;
+			}
+		}
+		break;
+		
+	case "radio":
+		for (var i = 1; i <=4; i++){
+			var ele = "name=pic"+1;
+			var val = $("input["+ele+"]").val();
+			if(val == "" || val.length > 20){
+				return false;
+			}
+		}
+		break;
+	}
+}

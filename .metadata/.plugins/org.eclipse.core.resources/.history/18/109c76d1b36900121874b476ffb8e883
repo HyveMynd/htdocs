@@ -1,0 +1,37 @@
+function validate(){
+	//ensure the form is correct before submitting
+	var invalid = false;
+	var errMsg = "";
+	
+	//check captions
+	$('input[name^="caption"]').each(function (){
+		if($.trim($(this).val()) == ''){
+			$(this).css('border', '3px #FF0000 solid');
+			invalid = true;
+			errMsg += "*A textbox is either empty, or contains too many characters.\n";
+		}
+	});
+
+	
+	//check radio group
+	$("input:radio").each(function(){
+		var name = $(this).attr("name");
+		if($("input:radio[name="+name+"]:checked").length == 0){
+			
+		}
+	});
+	
+	
+	$('input[name^="pic"]').each(function (){
+		if(!$($this))
+	});
+			
+			
+	if (!$("input[name='html_elements']:checked").val()) {
+		   alert('Nothing is checked!');
+		}
+	
+	if(invalid){
+		return false;
+	}
+}
