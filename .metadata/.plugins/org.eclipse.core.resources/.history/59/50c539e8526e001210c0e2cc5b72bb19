@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+body{
+	background-color:#FFFFFF;
+	font:arial, sans-serif;
+	color:#F8F8F8;
+}
+table{
+	background-color:#99CCFF;
+}

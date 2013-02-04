@@ -1,0 +1,42 @@
+<?php 
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="employmentHistory.php" method="post">
+	<h1>Employment History</h1>
+	<table>
+		<section>
+			<tr>
+				<td>Enter the Start Date:</td>
+				<td><input type="text" value="" required /></td>
+			</tr>
+			<tr>
+				<td>Enter the End Date:</td>
+				<td><input type="text" value="" required /></td>
+			</tr>
+			<tr>
+				<th>Enter a brief description of your responsibilities:</th>
+				<td><textarea rows=5 cols=10 required /></td>
+			</tr>
+		</section>
+	</table>
+	<input type="button" value="Add Previous Job" onclick="employmentField()"/>
+	<input type="submit" />
+	</form>
+	<p><a href="contactInfo.php" >Contact Info</a></p>
+	<p><a href="positionSought.php" >Position Sought</a></p>
+</body>
+<script type="text/javascript">
+function employmentField(){
+	$('h1').append('<p>Hello World</p>');
+}
+</script>
+</html>

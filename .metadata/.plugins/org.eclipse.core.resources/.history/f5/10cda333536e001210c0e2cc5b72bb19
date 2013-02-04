@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+
+body{
+	background-color:#FFFFFF;
+	font:arial, sans-serif;
+}
+h1{
+}
+table{
+	font:15px, arial, sans-sefif
+	background-color:#99CCFF;
+}
